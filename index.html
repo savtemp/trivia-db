@@ -13,22 +13,49 @@
   <title>trivia-db</title>
 </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">trivia-db</span>
-      </a>
-    </nav>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="debug">
+  <header class="row bg-dark text-light text-center">
+    <h1 class="col-12">Trivia-DB</h1>
   </header>
 
 
   <main class="container-fluid">
+
     <section class="row">
-      
+      <div class="col-12">Image</div>
     </section>
+
+    <!-- SECTION Trivia card -->
+    <section id="question" class="row justify-content-center">
+        <!-- <div class="col-10">Question</div>
+
+        <div class="col-5">Answer 1</div>
+        <div class="col-5">Answer 2</div>
+
+        <div class="col-5">Answer 3</div>
+        <div class="col-5">Answer 4</div> -->
+    </section>
+
+
   </main>
 
 
